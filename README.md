@@ -2,7 +2,7 @@ vagrant-ndbcluster
 ==================
 
 
-This is a vagrant file to create a 3 nodes NDB cluster
+This is a [Vagrant](http://www.vagrantup.com/) file that create a 3 nodes NDB cluster
 
 Nodes
 =====
@@ -24,11 +24,11 @@ Startup the cluster
 Download the RPMs
 -----------------
 
- sh download_rpms.sh
+``sh download_rpms.sh``
 
 
 Start vagrant
 -------------
- vagrant up
+``vagrant up``
 
 
