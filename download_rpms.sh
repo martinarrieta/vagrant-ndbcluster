@@ -1,6 +1,6 @@
 #/bin/sh
 
-
+# Download and store the rpm's under "modules/ndbcluster/files/rpms"
 
 packages="shared-compat server shared client"
 
