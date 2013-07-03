@@ -1,0 +1,23 @@
+[NDBD DEFAULT]
+NoOfReplicas=2
+[MYSQLD DEFAULT]
+[NDB_MGMD DEFAULT]
+[TCP DEFAULT]
+# Managment Server
+[NDB_MGMD]
+NodeId=1
+HostName=192.168.71.101        # the IP of THIS SERVER
+# Storage Engines
+[NDBD]
+NodeId=2
+HostName=192.168.71.102        # the IP of the FIRST SERVER
+DataDir= /var/lib/mysql-cluster
+[NDBD]
+NodeId=3
+HostName=192.168.71.103        # the IP of the SECOND SERVER
+DataDir=/var/lib/mysql-cluster
+# 2 MySQL Clients
+# I personally leave this blank to allow rapid changes of the mysql clients;
+# you can enter the hostnames of the above two servers here. I suggest you dont.
+[MYSQLD]
+[MYSQLD]
